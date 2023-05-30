@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#header-nav{
+    height: 75px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    background-color: rgb(37, 94, 233);
+    font-size: 15px;
+}
+
+#nav-menu a{
+    justify-content: space-evenly;
+    text-decoration: none;
+    padding:
+}
+
+#nav-menu{
+    width: 680px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    width: 100p;
+}
+
+button:hover{
+    box-shadow: 5px 5px grey;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#login{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+#header-bio{
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    color: white;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+}
+
+#header-bio-text{
+    width: 980px;
+    background-color: rgb(238, 130, 238);
+    min-height: 75%;
+}
+
+h2{
+    font-size: 80px;
+    padding-bottom: 75px;
+    font-weight: bolder;
+}
+
+h2 ~ p{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+main section{
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 66%;
+}
+
+.div-large{
+    width: 66.6%;
+    height: 100%;
+    background-color: rgb(255, 192, 203);
+}
+
+.div-small{
+    width: 33.3%;
+    height: 100%;
+    background-color: rgb(30, 144, 255);
+}
+
+main section:nth-child(2n+0){
+    background-color: grey;
+}
+
+main section:last-child div{
+    background-color: rgb(34, 139, 34);
+}
+
+#last-section{
+    height: 1080px;
+}
+
+#last-div{
+    height: 75%;
+}
+
+footer{
+    height: 780px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(35, 39, 42);
+    flex-wrap: wrap;
+}
+
+#footer-info{
+    width: 66%;
+    height: 85%;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lang-social{
+    background-color: rgb(240, 128, 128);
+    width: 33.3%;
+    justify-content: flex-start;
+}
+
+#site-map{
+    background-color: rgb(32, 178, 170);
+    width: 66.6%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#site-map nav{
+    width: 33.3%;
+    border: 1px solid grey;
+}
+
+hr{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0px;
+}
+
+#footer-bottom{
+    background-color: rgb(127, 255, 212);
+    width: 66%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-bottom div{
+    padding: 5px 10px;
+    background-color: rgb(255, 182, 193);
+}
