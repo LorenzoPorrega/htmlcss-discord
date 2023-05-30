@@ -15,56 +15,42 @@ header{
     flex-flow: row wrap;
 }
 
-#header-nav{
-    height: 75px;
+.header-nav{
+    height: 80px;
     width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: large;
-    background-color: rgb(37, 94, 233);
-    font-size: 15px;
-}
-
-#nav-menu a{
-    justify-content: space-evenly;
-    text-decoration: none;
-    padding:
-}
-
-#nav-menu{
-    width: 680px;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 94, 233);
+}
+
+.nav-menu{
+    width: 600px;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
 
 button{
     padding: 10px 15px;
     border: none;
     border-radius: 25px;
-    width: 100p;
+    background-color: white;
 }
 
 button:hover{
-    box-shadow: 5px 5px grey;
+    box-shadow: 2px 2px 10px black;
+    color: rgb(37, 94, 233);
+    background-color: white;
 }
 
-#logo{
-    display: flex;
-    justify-content: flex-start;
-}
-
-#login{
-    display: flex;
-    justify-content: right;
-    text-align: right;
-}
-
-#header-bio{
+.header-bio{
     height: 650px;
-    display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -73,21 +59,38 @@ button:hover{
     background-size: cover;
 }
 
-#header-bio-text{
+.header-bio-text{
     width: 980px;
-    background-color: rgb(238, 130, 238);
     min-height: 75%;
 }
 
-h2{
-    font-size: 80px;
+h1{
+    font-size: 3.5rem;
     padding-bottom: 75px;
     font-weight: bolder;
 }
 
-h2 ~ p{
-    font-size: 25px;
+h1 ~ p{
+    font-size: 1.5rem;
     line-height: 40px;
+}
+
+.header-bio-text a{
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.header-bio-text a:last-child{
+    background-color: rgb(35, 34, 34);
+    color: white;
+    margin-left: 15px;
 }
 
 main section{
