@@ -7,7 +7,6 @@
 
 .flex{
     display: flex;
-
 }
 
 header{
@@ -50,7 +49,7 @@ button:hover{
 
 .header-bio{
     height: 650px;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -62,11 +61,12 @@ button:hover{
 .header-bio-text{
     width: 980px;
     min-height: 75%;
+    padding-top: 125px;
 }
 
 h1{
     font-size: 3.5rem;
-    padding-bottom: 75px;
+    padding-bottom: 30px;
     font-weight: bolder;
 }
 
@@ -94,46 +94,109 @@ h1 ~ p{
 }
 
 main section{
-    height: 780px;
-    display: flex;
+    height: 980px;
     align-items: center;
     justify-content: center;
+    flex-flow: wrap;
 }
 
 main section div{
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 75%;
-    width: 66%;
+    width: 70%;
 }
 
 .div-large{
     width: 66.6%;
-    height: 100%;
-    background-color: rgb(255, 192, 203);
+}
+
+.img{
+    width: 100%;
+}
+
+section h2{
+    margin-top: 3rem;
+    font-size: 3.5rem;
+}
+
+main section p{
+    font-size: 1.35rem;
+    line-height: 2.5rem;
+    margin-top: 3.25rem;
 }
 
 .div-small{
     width: 33.3%;
-    height: 100%;
-    background-color: rgb(30, 144, 255);
 }
 
-main section:nth-child(2n+0){
-    background-color: grey;
+.bottom-wave{
+    filter: invert(0.95);
+    align-self: flex-end;
+    width: 100%;
 }
 
-main section:last-child div{
-    background-color: rgb(34, 139, 34);
+.top-wave{
+    filter: invert(0.95);
+    align-self: flex-start;
+    transform: rotateY(180deg) rotateX(180deg);
+    width: 100%;
 }
 
-#last-section{
+.grey-section{
     height: 1080px;
+    background-color: rgb(242, 242, 242);
 }
 
-#last-div{
-    height: 75%;
+.last-section{
+    height: 2000px;
+}
+
+.last-div{
+    height: 85%;
+    flex-flow: row wrap;
+    justify-items: center;
+}
+
+.div-top{
+    width: 87%;
+    max-height: 25%;
+}
+
+.last-section h2{
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.last-section p{
+    font-size: 1.35rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+.div-middle{
+    width: 100%;
+    height: 50%;
+}
+
+.div-bottom{
+    width: 100%;
+    max-height: 25%;
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    text-align: center;
+    vertical-align: center;
+}
+
+h3{
+    background-image: url(../img/stars.svg) center;
+    background-size: cover;
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 100px;
+    width: 100%;
 }
 
 footer{
